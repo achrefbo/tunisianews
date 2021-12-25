@@ -2,33 +2,69 @@
 <html lang="en">
 <head>
     <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-          crossorigin="anonymous"
-        />
-        <!--Font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
-          rel="stylesheet"
-        />
-        <!-- JavaScript Bundle with Popper -->
-        <script
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-          crossorigin="anonymous"
-        ></script>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous"
+      />
+      <link rel="shortcut icon" href="img/logo-icone.PNG" type="image/x-icon">
+      <!--Font-->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+        rel="stylesheet"
+      />
+        <!--Header Style -->
+        <link rel="stylesheet" href="style/header.css" />
+  
+        <!--Style css-->
         <link rel="stylesheet" href="style/style.css" />
+      <!-- JavaScript Bundle with Popper -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"
+      ></script>
+         
+           <!--Script js-->
+          <script src="script/script.js" ></script>
         <title>contact</title>
 </head>
 <body>
+  <div class="wrapper">
+     <!--Header -->
+     <header class="container header-nav container-md">
+      <div class="logo navbar"> 
+          <img src="img/Logo/logo.png" alt="Tunisiachecknews">
+      </div>
+      <div class="menu  " id="header-nav-items">
+        <nav>
+          <ul class="navigation-items list-unstyled text-uppercase" >
+              <li class=" pe-lg-3 pe-md-2"><a href="index.html" class="active"> Accueil</a></li>
+              <li class=" pe-lg-3 pe-md-2"><a href="a-propos.html"> A propos</a></li>
+              <li class=" pe-lg-3 pe-md-2"><a href="#">Catégories</a> </li>
+              <li class=" pe-lg-3 pe-md-2"><a href="#">Sujets</a> </li>
+              <li class=" pe-lg-5 pe-md-2"> <a href="contact.html"> Contact</a></li>
+              <li class=" pe-lg-1 pe-md-1 "> <input class="form-control" type="search " placeholder="Recherche"> </li>
+              <li><img src="img/icone/icone-man-user.png" alt=""></li>
+          </ul>
+      </nav>
+      </div>
+      <div class="hamburger  " onclick="menu()">
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+  </header> 
+<!--End Header -->
+
     <main>
+
         <!--Slider -->
         <div class="container-fluid slider-other text-white">
           <div class="container">
@@ -72,7 +108,7 @@
      </main>
      <footer class="container-fluid">
         <div class="container">
-          <div class="row justify-content-center py-sm-0 py-md-2 py-lg-5">
+          <div class="row justify-content-center py-sm-3 py-md-2 py-lg-5">
             <div class="col-lg-6 text-white">
               <h5 class="py-sm-0 py-md-2 py-lg-5">Contact info</h5>
               <p>
@@ -130,5 +166,6 @@
           </div>
         </div>
       </footer>
+    </div>
 </body>
 </html>

@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="shortcut icon" href="img/logo-icone.PNG" type="image/x-icon">
     <!--Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,19 +18,51 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
       rel="stylesheet"
     />
+      <!--Header Style -->
+      <link rel="stylesheet" href="style/header.css" />
+
+      <!--Style css-->
+      <link rel="stylesheet" href="style/style.css" />
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    
+       
+         <!--Script js-->
+        <script src="script/script.js" ></script>
+
     <title>Home</title>
   </head>
 
   <body>
     <div class="wrapper">
-      <header></header>
+     <!--Header -->
+     <header class="container header-nav container-md">
+      <div class="logo navbar"> 
+          <img src="img/Logo/logo.png" alt="Tunisiachecknews">
+      </div>
+      <div class="menu  " id="header-nav-items">
+          <nav>
+              <ul class="navigation-items list-unstyled text-uppercase" >
+                  <li class=" pe-lg-3 pe-md-2"><a href="index.html" class="active"> Accueil</a></li>
+                  <li class=" pe-lg-3 pe-md-2"><a href="a-propos.html"> A propos</a></li>
+                  <li class=" pe-lg-3 pe-md-2"><a href="#">Catégories</a> </li>
+                  <li class=" pe-lg-3 pe-md-2"><a href="#">Sujets</a> </li>
+                  <li class=" pe-lg-5 pe-md-2"> <a href="contact.html"> Contact</a></li>
+                  <li class=" pe-lg-1 pe-md-1 "> <input class="form-control" type="search " placeholder="Recherche"> </li>
+                  <li><img src="img/icone/icone-man-user.png" alt=""></li>
+              </ul>
+          </nav>
+      </div>
+      <div class="hamburger  " onclick="menu()">
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+  </header> 
+<!--End Header -->
       <main>
         <!--Section 0 : Slider-->
         <div class="container-fluid home-slider">
@@ -78,12 +110,12 @@
                   rerum soluta doloribus omnis, nihil corrupti! At atque
                 </p>
                 <div class="d-flex justify-content-between py-2">
-                  <a class="text-danger" href="#">Read More</a>
+                  <a class="text-danger" href="article.html">Read More</a>
                   <img src="img/icone/icone-partage.png" alt="" />
                 </div>
               </div>
             </div>
-            <div class="border shadow" style="width: 25rem">
+            <div class="border shadow d-none d-lg-block" style="width: 25rem">
               <div>
                 <img
                   class="w-100 py-2"
@@ -112,12 +144,12 @@
                   rerum soluta doloribus omnis, nihil corrupti! At atque
                 </p>
                 <div class="d-flex justify-content-between py-2">
-                  <a class="text-danger" href="#">Read More</a>
+                  <a class="text-danger" href="article.html">Read More</a>
                   <img src="img/icone/icone-partage.png" alt="" />
                 </div>
               </div>
             </div>
-            <div class="border shadow" style="width: 25rem">
+            <div class="border shadow d-none  d-xl-block " style="width: 25rem">
               <div>
                 <img
                   class="w-100 py-2"
@@ -213,7 +245,7 @@
                   </div>
                 </div>
               </div>
-              <div class="border shadow" style="width: 25rem">
+              <div class="border shadow d-none d-lg-block" style="width: 25rem">
                 <div>
                   <img
                     class="w-100 py-2"
@@ -249,7 +281,7 @@
                   </div>
                 </div>
               </div>
-              <div class="border shadow" style="width: 25rem">
+              <div class="border shadow d-none d-xl-block" style="width: 25rem">
                 <div>
                   <img
                     class="w-100 py-2"
@@ -349,7 +381,7 @@
                   </div>
                 </div>
               </div>
-              <div class="border shadow" style="width: 25rem">
+              <div class="border shadow d-none d-lg-block" style="width: 25rem">
                 <div>
                   <img
                     class="w-100 py-2"
@@ -385,7 +417,7 @@
                   </div>
                 </div>
               </div>
-              <div class="border shadow" style="width: 25rem">
+              <div class="border shadow d-none  d-xl-block" style="width: 25rem">
                 <div>
                   <img
                     class="w-100 py-2"
@@ -486,7 +518,7 @@
                   </div>
                 </div>
               </div>
-              <div class="border shadow" style="width: 25rem">
+              <div class="border shadow  d-none d-lg-block" style="width: 25rem">
                 <div>
                   <img
                     class="w-100 py-2"
@@ -522,7 +554,7 @@
                   </div>
                 </div>
               </div>
-              <div class="border shadow" style="width: 25rem">
+              <div class="border shadow d-none d-xl-block" style="width: 25rem">
                 <div>
                   <img
                     class="w-100 py-2"
@@ -605,7 +637,7 @@
       <!--footer-->
       <footer class="container-fluid">
         <div class="container">
-          <div class="row justify-content-center py-sm-0 py-md-2 py-lg-5">
+          <div class="row justify-content-center py-sm-3 py-md-2 py-lg-5">
             <div class="col-lg-6 text-white">
               <h5 class="py-sm-0 py-md-2 py-lg-5">Contact info</h5>
               <p>
@@ -663,15 +695,8 @@
           </div>
         </div>
       </footer>
-          <!--end Footer-->
     </div>
-    
-<div class=" container   px-5  bg-success  ">
-  <div>
 
-
-</div>
-</div>
-
+    <!--end Footer-->
   </body>
 </html>
